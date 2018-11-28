@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "d29a27fc-58fc-48d0-b7ca-8473706d70f1",
+		"name": "weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api.openweathermap.org/data/2.5/forecast?q=Izhevsk,ru&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast?q=Paris,fr&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Paris,fr"
+						},
+						{
+							"key": "mode",
+							"value": "xml"
+						},
+						{
+							"key": "APPID",
+							"value": "26f7524f7ce5dbc3db7bd0a33f0dfd12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.openweathermap.org/data/2.5/forecast?q=Paris,fr&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast?q=Paris,fr&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Paris,fr"
+						},
+						{
+							"key": "mode",
+							"value": "xml"
+						},
+						{
+							"key": "APPID",
+							"value": "26f7524f7ce5dbc3db7bd0a33f0dfd12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.openweathermap.org/data/2.5/forecast?q=Washington,us&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast?q=Washington,us&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Washington,us"
+						},
+						{
+							"key": "mode",
+							"value": "xml"
+						},
+						{
+							"key": "APPID",
+							"value": "26f7524f7ce5dbc3db7bd0a33f0dfd12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.openweathermap.org/data/2.5/weather?q=Izhevsk,ru&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Izhevsk,ru&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Izhevsk,ru"
+						},
+						{
+							"key": "mode",
+							"value": "xml"
+						},
+						{
+							"key": "APPID",
+							"value": "26f7524f7ce5dbc3db7bd0a33f0dfd12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.openweathermap.org/data/2.5/weather?q=Paris,fr&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Paris,fr&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Paris,fr"
+						},
+						{
+							"key": "mode",
+							"value": "xml"
+						},
+						{
+							"key": "APPID",
+							"value": "26f7524f7ce5dbc3db7bd0a33f0dfd12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api.openweathermap.org/data/2.5/weather?q=Washington,us&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Washington,us&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Washington,us"
+						},
+						{
+							"key": "mode",
+							"value": "xml"
+						},
+						{
+							"key": "APPID",
+							"value": "26f7524f7ce5dbc3db7bd0a33f0dfd12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/pollution/v1/co/57,53/current.json?appid=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.openweathermap.org/pollution/v1/co/57,53/current.json?appid=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"pollution",
+						"v1",
+						"co",
+						"57,53",
+						"current.json"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "26f7524f7ce5dbc3db7bd0a33f0dfd12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/pollution/v1/co/49,2/current.json?appid=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.openweathermap.org/pollution/v1/co/49,2/current.json?appid=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"pollution",
+						"v1",
+						"co",
+						"49,2",
+						"current.json"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "26f7524f7ce5dbc3db7bd0a33f0dfd12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/pollution/v1/co/39,-77/current.json?appid=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.openweathermap.org/pollution/v1/co/39,-77/current.json?appid=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"pollution",
+						"v1",
+						"co",
+						"39,-77",
+						"current.json"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "26f7524f7ce5dbc3db7bd0a33f0dfd12"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
