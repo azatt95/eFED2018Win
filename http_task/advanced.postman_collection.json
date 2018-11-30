@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "6a96f351-677a-46c3-a663-ef9e6234f7b8",
+		"name": "advanced",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "windspeed_izhevsk_post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"time_period\": {\n        \"start\": {\n            \"expression\": \"after\",\n            \"amount\": 132000000\n        },\n        \"end\": {\n            \"expression\": \"after\",\n            \"amount\": 432000000\n        }\n    },\n    \"conditions\": [\n        {\n            \"name\": \"wind_speed\",\n            \"expression\": \"$gt\",\n            \"amount\": 5\n        }\n    ],\n    \"area\": [\n        {\n            \"type\": \"Point\",\n            \"coordinates\": [\n                56.8666,\n                53.2094\n            ]\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/3.0/triggers?appid=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"3.0",
+						"triggers"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "26f7524f7ce5dbc3db7bd0a33f0dfd12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "windspeed_izhevsk_get",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/3.0/triggers/5c01355dceb88d001f39442a?appid=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"3.0",
+						"triggers",
+						"5c01355dceb88d001f39442a"
+					],
+					"query": [
+						{
+							"key": "appid",
+							"value": "26f7524f7ce5dbc3db7bd0a33f0dfd12"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
