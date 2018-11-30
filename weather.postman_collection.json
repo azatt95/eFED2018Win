@@ -1,12 +1,51 @@
 {
 	"info": {
-		"_postman_id": "d29a27fc-58fc-48d0-b7ca-8473706d70f1",
+		"_postman_id": "3c56fe31-deee-4235-aa4c-0e0622ec4080",
 		"name": "weather",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "api.openweathermap.org/data/2.5/forecast?q=Izhevsk,ru&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"name": "5 days weather - Izhevsk",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast?q=Izhevsk,ru&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Izhevsk,ru"
+						},
+						{
+							"key": "mode",
+							"value": "xml"
+						},
+						{
+							"key": "APPID",
+							"value": "26f7524f7ce5dbc3db7bd0a33f0dfd12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5 days weather - Paris",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -45,46 +84,7 @@
 			"response": []
 		},
 		{
-			"name": "api.openweathermap.org/data/2.5/forecast?q=Paris,fr&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": ""
-				},
-				"url": {
-					"raw": "api.openweathermap.org/data/2.5/forecast?q=Paris,fr&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
-					"host": [
-						"api",
-						"openweathermap",
-						"org"
-					],
-					"path": [
-						"data",
-						"2.5",
-						"forecast"
-					],
-					"query": [
-						{
-							"key": "q",
-							"value": "Paris,fr"
-						},
-						{
-							"key": "mode",
-							"value": "xml"
-						},
-						{
-							"key": "APPID",
-							"value": "26f7524f7ce5dbc3db7bd0a33f0dfd12"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "api.openweathermap.org/data/2.5/forecast?q=Washington,us&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"name": "5 days weather - Washington",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -123,7 +123,7 @@
 			"response": []
 		},
 		{
-			"name": "api.openweathermap.org/data/2.5/weather?q=Izhevsk,ru&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"name": "Current weather - Izhevsk",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -162,7 +162,7 @@
 			"response": []
 		},
 		{
-			"name": "api.openweathermap.org/data/2.5/weather?q=Paris,fr&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"name": "Current weather - Paris",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -201,7 +201,7 @@
 			"response": []
 		},
 		{
-			"name": "api.openweathermap.org/data/2.5/weather?q=Washington,us&mode=xml&APPID=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"name": "Current weather - Washington",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -240,7 +240,7 @@
 			"response": []
 		},
 		{
-			"name": "https://api.openweathermap.org/pollution/v1/co/57,53/current.json?appid=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"name": "Pollution - Izhevsk",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -274,7 +274,7 @@
 			"response": []
 		},
 		{
-			"name": "https://api.openweathermap.org/pollution/v1/co/49,2/current.json?appid=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"name": "Pollution - Paris",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -308,7 +308,7 @@
 			"response": []
 		},
 		{
-			"name": "https://api.openweathermap.org/pollution/v1/co/39,-77/current.json?appid=26f7524f7ce5dbc3db7bd0a33f0dfd12",
+			"name": "Pollution - Washington",
 			"request": {
 				"method": "GET",
 				"header": [],
