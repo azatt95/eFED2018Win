@@ -5,7 +5,10 @@
 }
 
 body,
-div {
+section,
+header,
+footer,
+figure {
     padding: 5px;
 }
 
@@ -13,7 +16,10 @@ body {
     display: inline-block;
 }
 
-div:not(.borderless) {
+section:not(.borderless),
+header,
+footer,
+figure {
     border: 1px solid black;
 }
 
