@@ -1,0 +1,16 @@
+@import "main.css";
+
+table {
+    text-align: center;
+    border-spacing: 0;
+}
+
+td {
+    border: none;
+    padding: 10px;
+}
+
+tr:nth-child(odd) > td:nth-child(odd),
+tr:nth-child(even) > td:nth-child(even) {
+    background-color: rgb(196, 196, 196);
+}

@@ -1,0 +1,106 @@
+@import "main.css";
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+tr.quad > td {
+    border-style: none; 
+}
+
+tr.quad > td:nth-child(4n) {
+    border-right-style: solid;
+}
+
+tr.quad > td:nth-child(4n-3) {
+    border-left-style: solid;
+}
+
+tr.quad.colored > td > p {
+    border: 1px inset rgba(0,0,0,.25);
+}
+
+tr.quad.colored > td > p.green {
+    background: lightgreen;
+}
+
+tr.quad.colored > td > p.yellow {
+    background: yellow;
+}
+
+tr.quad.colored > td > p.orange {
+    background: orange;
+}
+
+tr.whole > td {
+    background: lightgrey;
+}
+
+tr.quad.precipitation > td {
+    vertical-align: bottom;
+    text-align: center;
+    border-bottom-style: solid;
+    padding-bottom: 2px;
+}
+
+tr.quad.precipitation > td > img {
+    display: inline-block;
+    margin-top: 3em;
+}
+
+tr.quad.precipitation > td > p {
+    margin-top: -1.5em;
+}
+
+.scroll {
+    cursor: pointer;
+}
+
+.scroll.right {
+    transform: scaleX(-1);
+}
+
+#sec1 {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.absoluteTopLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+#sunAndMoon {
+    padding: 0;
+}
+
+#sunAndMoon > figure {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.statusImage {
+    margin: 10px;
+    float: left;
+}

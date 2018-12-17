@@ -1,0 +1,39 @@
+@import "main.css";
+
+#pollution-level {
+    vertical-align: center;
+}
+
+#temperature {
+    font-size: 300%;
+}
+
+#location,
+#precip-prob,
+#humidity,
+#windspeed {
+    font-size: 200%;
+}
+
+#weekday,
+#weather {
+    font-size: 150%;
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#copyright {
+    text-align: center;
+}
+
+.date-block {
+    display: inline-block;
+    text-align: center;
+}
+
+.grayed {
+    color: gray;
+}
