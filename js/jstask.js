@@ -1,5 +1,3 @@
-// part A
-
 // 1 ok
 function countChar(str, symbol) {
     str = str.toLowerCase();
@@ -143,7 +141,7 @@ function safelyExecute(func) {
     var maxAttempts = 100; // to avoid getting stuck
     while (i < maxAttempts) {
         try { result = func(...args); }
-        catch(e) { i++; continue; }
+        catch(e) { if (e === "MultiplicatorUnitFailure") { i++; continue; } }
         break;
     }
     // console.log("Exceptions handled: " + i);
@@ -160,7 +158,7 @@ function replaceQuotes(str) {
 
 //10 done
 function findNumbers(arr) {
-    var re = /^(?:-|\+)?(?:\d+\.?\d*(?:[eE](?:-|\+)?\d+)?|\.\d+)$/;
+    var re = /^(?:-|\+)?(?:\d+\.?\d*|\.\d+)(?:[eE](?:-|\+)?\d+)?$/;
     var len = arr.length;
     var newArr = [];
     for (var i = 0, elem; i < len; i++) {
@@ -181,7 +179,7 @@ function isDate() {
 
 //11 done
 function getNames(date) {
-    if (!isDate(date)) return "Argument must be a Date object";
+    if (!isDate(date)) throw "Argument must be a Date object";
     var monthNames = ["January", "February", "March", "April", "May", "June", "July",
                       "August", "September", "October", "November", "December"]
     var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -190,6 +188,6 @@ function getNames(date) {
 
 //12 done
 function differenceInYears(d1, d2) {
-    if (!isDate(d1, d2)) return "Each argument must be a Date object";
-    return Math.round((d2 - d1)/1000/60/60/24/365*10)/10;
+    if (!isDate(d1, d2)) throw "Each argument must be a Date object";
+    return +((d2 - d1)/1000/60/60/24/365).toFixed(1);
 }
