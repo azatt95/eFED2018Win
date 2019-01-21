@@ -8,6 +8,7 @@ table {
 th, td {
     border: 1px solid black;
     padding: 3px;
+    min-width: 2em;
 }
 
 .container {
@@ -31,23 +32,27 @@ tr.quad > td:nth-child(4n-3) {
     border-left-style: solid;
 }
 
-tr.quad.colored > td > p {
+p.colored {
     border: 1px inset rgba(0,0,0,.25);
+    display: inline-block;
+    min-width: 2em;
 }
 
-tr.quad.colored > td > p.green {
+p.green {
     background: lightgreen;
 }
 
-tr.quad.colored > td > p.yellow {
+p.yellow {
     background: yellow;
 }
 
-tr.quad.colored > td > p.orange {
+p.orange {
     background: orange;
 }
 
+p.grey,
 tr.whole > td {
+    padding: 3px 10px;
     background: lightgrey;
 }
 
@@ -69,6 +74,7 @@ tr.quad.precipitation > td > p {
 
 .scroll {
     cursor: pointer;
+    align-self: center;
 }
 
 .scroll.right {
@@ -103,4 +109,43 @@ tr.quad.precipitation > td > p {
 .statusImage {
     margin: 10px;
     float: left;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.day {
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.day > div:not(:last-child):not(.borderless) {
+    border-bottom: 1px solid black;
+}
+
+.image-container {
+    width: 48px;
+    height: 48px;
+}
+
+*[hidden] {
+    display: none;
+}
+
+.flex .button {
+    padding: 5px;
+}
+
+.flex .button:not(:last-child) {
+    margin-right: -1px;
+}
+
+.flex .button:hover:active,
+.flex .button[checked] {
+    z-index: 1;
 }
