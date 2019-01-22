@@ -1,9 +1,3 @@
-// this.window.onload = function() {
-//   window.document.getElementById("mainInfo").innerHTML = JSON.stringify(
-//     weekForecastMock
-//   );
-// };
-
 var dayView = document.getElementById("dayView");
 var days = dayView.getElementsByClassName("day");
 var daySel = 0;
@@ -28,3 +22,11 @@ function selectDay(arg) {
     dayBtns[formerDaySel].removeAttribute("checked");
     dayBtns[daySel].setAttribute("checked", "");
 }
+
+var dayLen = days.length;
+for (var i = 0; i < dayLen; i++) {
+    dayBtns[i].setAttribute("onclick", "selectDay(" + i + ")");
+}
+
+document.getElementById("scroll-left").setAttribute("onclick", "selectDay('previous')");
+document.getElementById("scroll-right").setAttribute("onclick", "selectDay('next')");

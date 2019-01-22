@@ -21,7 +21,7 @@
             <input type="search" class="searchField" placeholder="Search">
          </section>
          <section class="flex" id="dayView">
-         <img class="scroll left" alt="scroll left" src="img/5days/left-arrow-key.png" onclick="selectDay('previous')">
+         <img class="scroll" id="scroll-left" alt="scroll left" src="img/5days/left-arrow-key.png">
             <div class="day">
                <div><p class="grey">Пт, 18 мая</p></div>
                <div class="flex">
@@ -187,14 +187,14 @@
                   </div>
                </div>
             </div>
-            <img class="scroll right" alt="scroll right" src="img/5days/left-arrow-key.png"  onclick="selectDay('next')">
+            <img class="scroll" id="scroll-right" alt="scroll right" src="img/5days/left-arrow-key.png">
          </section>
          <section class="flex" id="daySelector">
-            <div class="button dayBtn" onclick="selectDay(0)" checked>Пт, 18 мая</div>
-            <div class="button dayBtn" onclick="selectDay(1)">Сб, 19 мая</div>
-            <div class="button dayBtn" onclick="selectDay(2)">Вс, 20 мая</div>
-            <div class="button dayBtn" onclick="selectDay(3)">Пн, 21 мая</div>
-            <div class="button dayBtn" onclick="selectDay(4)">Вт, 22 мая</div>
+            <div class="button dayBtn" checked>Пт, 18 мая</div>
+            <div class="button dayBtn">Сб, 19 мая</div>
+            <div class="button dayBtn">Вс, 20 мая</div>
+            <div class="button dayBtn">Пн, 21 мая</div>
+            <div class="button dayBtn">Вт, 22 мая</div>
          </section>
          <section class="container">
             <table>
