@@ -15,9 +15,11 @@ figure {
     padding: 5px;
 }
 
-main > section,
 main > nav,
-main > figure{
+main > section,
+main > figure,
+main > div > section,
+main > div > figure {
     border-bottom: 1px solid rgb(150, 150, 150);
 }
 
