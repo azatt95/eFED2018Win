@@ -87,8 +87,7 @@ xhrFC.onload = function() {
                 j++;
             }
         }
-        if (JSON.stringify(arr[j]) === "{}") arr.pop();
-        console.log(arr);
+        if (Object.keys(arr[j]).length === 0) arr.pop();
         // Data rendering
         var els = document.getElementsByClassName("date-block");
         var arrLen = arr.length;
