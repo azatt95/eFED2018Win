@@ -12,145 +12,192 @@
    <body>
       <main>
          <nav>
-            <button><a href="today.html">Сегодня</a></button>
-            <button checked><a href="5days.html">5 дней</a></button>
-            <button><a href="history.html">История погоды</a></button>
+            <div class="button"><a href="today.html">Сегодня</a></div>
+            <div class="button" checked><a href="5days.html">5 дней</a></div>
+            <div class="button"><a href="history.html">История погоды</a></div>
          </nav>
          <section class="search-bar">
             <span>34° Ижевск, Россия</span>
             <input type="search" class="searchField" placeholder="Search">
          </section>
+         <section class="flex" id="dayView">
+         <img class="scroll" id="scroll-left" alt="scroll left" src="img/5days/left-arrow-key.png">
+            <div class="day">
+               <div><p class="grey">Пт, 18 мая</p></div>
+               <div class="flex">
+                  <div>
+                     <p>Ночь</p>
+                     <div class="flex image-container">
+                        <img alt="cloudy" src="img/5days/Cloudy_Weather.png">
+                     </div>
+                     <p class="colored green">+8</p>
+                  </div>
+                  <div>
+                     <p>Утро</p>
+                     <div class="flex image-container">
+                        <img alt="sunny" src="img/5days/Sunny_Weather.png">
+                     </div>
+                     <p class="colored yellow">+16</p>
+                  </div>
+                  <div>
+                     <p>День</p>
+                     <div class="flex image-container">
+                        <img alt="rainy" src="img/5days/Rainy_Weather.png">
+                     </div>
+                     <p class="colored orange">+21</p>
+                  </div>
+                  <div>
+                     <p>Вечер</p>
+                     <div class="flex image-container">
+                        <img alt="rainy" src="img/5days/Rainy_Weather.png">
+                     </div>
+                     <p class="colored yellow">+17</p>
+                  </div>
+               </div>
+            </div>
+            <div class="day" hidden>
+               <div><p class="grey">Сб, 19 мая</p></div>
+               <div class="flex">
+                  <div>
+                     <p>Ночь</p>
+                     <div class="flex image-container">
+                        <img alt="cloudy" src="img/5days/Cloudy_Weather.png">
+                     </div>
+                     <p class="colored green">+8</p>
+                  </div>
+                  <div>
+                     <p>Утро</p>
+                     <div class="flex image-container">
+                        <img alt="sunny" src="img/5days/Sunny_Weather.png">
+                     </div>
+                     <p class="colored yellow">+16</p>
+                  </div>
+                  <div>
+                     <p>День</p>
+                     <div class="flex image-container">
+                        <img alt="rainy" src="img/5days/Rainy_Weather.png">
+                     </div>
+                     <p class="colored orange">+21</p>
+                  </div>
+                  <div>
+                     <p>Вечер</p>
+                     <div class="flex image-container">
+                        <img alt="rainy" src="img/5days/Rainy_Weather.png">
+                     </div>
+                     <p class="colored yellow">+17</p>
+                  </div>
+               </div>
+            </div>
+            <div class="day" hidden>
+               <div><p class="grey">Вс, 20 мая</p></div>
+               <div class="flex">
+                  <div>
+                     <p>Ночь</p>
+                     <div class="flex image-container">
+                        <img alt="cloudy" src="img/5days/Cloudy_Weather.png">
+                     </div>
+                     <p class="colored green">+8</p>
+                  </div>
+                  <div>
+                     <p>Утро</p>
+                     <div class="flex image-container">
+                        <img alt="sunny" src="img/5days/Sunny_Weather.png">
+                     </div>
+                     <p class="colored yellow">+16</p>
+                  </div>
+                  <div>
+                     <p>День</p>
+                     <div class="flex image-container">
+                        <img alt="rainy" src="img/5days/Rainy_Weather.png">
+                     </div>
+                     <p class="colored orange">+21</p>
+                  </div>
+                  <div>
+                     <p>Вечер</p>
+                     <div class="flex image-container">
+                        <img alt="rainy" src="img/5days/Rainy_Weather.png">
+                     </div>
+                     <p class="colored yellow">+17</p>
+                  </div>
+               </div>
+            </div>
+            <div class="day" hidden>
+               <div><p class="grey">Пн, 21 мая</p></div>
+               <div class="flex">
+                  <div>
+                     <p>Ночь</p>
+                     <div class="flex image-container">
+                        <img alt="cloudy" src="img/5days/Cloudy_Weather.png">
+                     </div>
+                     <p class="colored green">+8</p>
+                  </div>
+                  <div>
+                     <p>Утро</p>
+                     <div class="flex image-container">
+                        <img alt="sunny" src="img/5days/Sunny_Weather.png">
+                     </div>
+                     <p class="colored yellow">+16</p>
+                  </div>
+                  <div>
+                     <p>День</p>
+                     <div class="flex image-container">
+                        <img alt="rainy" src="img/5days/Rainy_Weather.png">
+                     </div>
+                     <p class="colored orange">+21</p>
+                  </div>
+                  <div>
+                     <p>Вечер</p>
+                     <div class="flex image-container">
+                        <img alt="rainy" src="img/5days/Rainy_Weather.png">
+                     </div>
+                     <p class="colored yellow">+17</p>
+                  </div>
+               </div>
+            </div>
+            <div class="day" hidden>
+               <div><p class="grey">Вт, 22 мая</p></div>
+               <div class="flex">
+                  <div>
+                     <p>Ночь</p>
+                     <div class="flex image-container">
+                        <img alt="cloudy" src="img/5days/Cloudy_Weather.png">
+                     </div>
+                     <p class="colored green">+8</p>
+                  </div>
+                  <div>
+                     <p>Утро</p>
+                     <div class="flex image-container">
+                        <img alt="sunny" src="img/5days/Sunny_Weather.png">
+                     </div>
+                     <p class="colored yellow">+16</p>
+                  </div>
+                  <div>
+                     <p>День</p>
+                     <div class="flex image-container">
+                        <img alt="rainy" src="img/5days/Rainy_Weather.png">
+                     </div>
+                     <p class="colored orange">+21</p>
+                  </div>
+                  <div>
+                     <p>Вечер</p>
+                     <div class="flex image-container">
+                        <img alt="rainy" src="img/5days/Rainy_Weather.png">
+                     </div>
+                     <p class="colored yellow">+17</p>
+                  </div>
+               </div>
+            </div>
+            <img class="scroll" id="scroll-right" alt="scroll right" src="img/5days/left-arrow-key.png">
+         </section>
+         <section class="flex" id="daySelector">
+            <div class="button dayBtn" checked>Пт, 18 мая</div>
+            <div class="button dayBtn">Сб, 19 мая</div>
+            <div class="button dayBtn">Вс, 20 мая</div>
+            <div class="button dayBtn">Пн, 21 мая</div>
+            <div class="button dayBtn">Вт, 22 мая</div>
+         </section>
          <section class="container">
-            <img class="scroll left" alt="scroll left" src="img/5days/left-arrow-key.png">
             <table>
-               <tr>
-                  <th colspan="4">Пт, 18 мая</th>
-                  <th colspan="4">Сб, 19 мая</th>
-                  <th colspan="4">Вс, 20 мая</th>
-                  <th colspan="4">Пн, 21 мая</th>
-                  <th colspan="4">Вт, 22 мая</th>
-               </tr>
-               <tr class="quad">
-                  <!-- day 1 -->
-                  <td>Ночь</td>
-                  <td>Утро</td>
-                  <td>День</td>
-                  <td>Вечер</td>
-                  <!-- day 2 -->
-                  <td>Ночь</td>
-                  <td>Утро</td>
-                  <td>День</td>
-                  <td>Вечер</td>
-                  <!-- day 3 -->
-                  <td>Ночь</td>
-                  <td>Утро</td>
-                  <td>День</td>
-                  <td>Вечер</td>
-                  <!-- day 4 -->
-                  <td>Ночь</td>
-                  <td>Утро</td>
-                  <td>День</td>
-                  <td>Вечер</td>
-                  <!-- day 5 -->
-                  <td>Ночь</td>
-                  <td>Утро</td>
-                  <td>День</td>
-                  <td>Вечер</td>
-               </tr>
-               <tr class="quad">
-                  <!-- day 1 -->
-                  <td><img alt="cloudy" src="img/5days/Cloudy_Weather.png"></td>
-                  <td><img alt="sunny" src="img/5days/Sunny_Weather.png"></td>
-                  <td><img alt="rainy" src="img/5days/Rainy_Weather.png"></td>
-                  <td><img alt="rainy" src="img/5days/Rainy_Weather.png"></td>
-                  <!-- day 2 -->
-                  <td><img alt="cloudy" src="img/5days/Cloudy_Weather.png"></td>
-                  <td><img alt="sunny" src="img/5days/Sunny_Weather.png"></td>
-                  <td><img alt="rainy" src="img/5days/Rainy_Weather.png"></td>
-                  <td><img alt="rainy" src="img/5days/Rainy_Weather.png"></td>
-                  <!-- day 3 -->
-                  <td><img alt="cloudy" src="img/5days/Cloudy_Weather.png"></td>
-                  <td><img alt="sunny" src="img/5days/Sunny_Weather.png"></td>
-                  <td><img alt="rainy" src="img/5days/Rainy_Weather.png"></td>
-                  <td><img alt="rainy" src="img/5days/Rainy_Weather.png"></td>
-                  <!-- day 4 -->
-                  <td><img alt="cloudy" src="img/5days/Cloudy_Weather.png"></td>
-                  <td><img alt="sunny" src="img/5days/Sunny_Weather.png"></td>
-                  <td><img alt="rainy" src="img/5days/Rainy_Weather.png"></td>
-                  <td><img alt="rainy" src="img/5days/Rainy_Weather.png"></td>
-                  <!-- day 5 -->
-                  <td><img alt="cloudy" src="img/5days/Cloudy_Weather.png"></td>
-                  <td><img alt="sunny" src="img/5days/Sunny_Weather.png"></td>
-                  <td><img alt="rainy" src="img/5days/Rainy_Weather.png"></td>
-                  <td><img alt="rainy" src="img/5days/Rainy_Weather.png"></td>
-               </tr>
-               <tr class="quad colored">
-                  <!-- day 1 -->
-                  <td>
-                     <p class="green">+8</p>
-                  </td>
-                  <td>
-                     <p class="yellow">+16</p>
-                  </td>
-                  <td>
-                     <p class="orange">+21</p>
-                  </td>
-                  <td>
-                     <p class="yellow">+17</p>
-                  </td>
-                  <!-- day 2 -->
-                  <td>
-                     <p class="green">+8</p>
-                  </td>
-                  <td>
-                     <p class="yellow">+16</p>
-                  </td>
-                  <td>
-                     <p class="orange">+21</p>
-                  </td>
-                  <td>
-                     <p class="yellow">+17</p>
-                  </td>
-                  <!-- day 3 -->
-                  <td>
-                     <p class="green">+8</p>
-                  </td>
-                  <td>
-                     <p class="yellow">+16</p>
-                  </td>
-                  <td>
-                     <p class="orange">+21</p>
-                  </td>
-                  <td>
-                     <p class="yellow">+17</p>
-                  </td>
-                  <!-- day 4 -->
-                  <td>
-                     <p class="green">+8</p>
-                  </td>
-                  <td>
-                     <p class="yellow">+16</p>
-                  </td>
-                  <td>
-                     <p class="orange">+21</p>
-                  </td>
-                  <td>
-                     <p class="yellow">+17</p>
-                  </td>
-                  <!-- day 5 -->
-                  <td>
-                     <p class="green">+8</p>
-                  </td>
-                  <td>
-                     <p class="yellow">+16</p>
-                  </td>
-                  <td>
-                     <p class="orange">+21</p>
-                  </td>
-                  <td>
-                     <p class="yellow">+17</p>
-                  </td>
-               </tr>
                <tr class="whole">
                   <td colspan="20">Максимальная скорость ветра, м/с</td>
                </tr>
@@ -282,7 +329,6 @@
                   </td>
                </tr>
             </table>
-            <img class="scroll right" alt="scroll right" src="img/5days/left-arrow-key.png">
          </section>
          <section id="sec1">
             <figure class="absoluteTopLeft">
@@ -310,5 +356,6 @@
             <p id="copyright">2018 © Copyright</p>
          </footer>
       </main>
+      <script src="js/5days.js"></script>
    </body>
 </html>

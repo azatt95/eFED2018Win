@@ -12,30 +12,29 @@
    <body>
       <main>
          <nav>
-            <button checked><a href="today.html">Сегодня</a></button>
-            <button><a href="5days.html">5 дней</a></button>
-            <button><a href="history.html">История погоды</a></button>
+            <div class="button" checked><a href="today.html">Сегодня</a></div>
+            <div class="button"><a href="5days.html">5 дней</a></div>
+            <div class="button"><a href="history.html">История погоды</a></div>
          </nav>
          <section class="search-bar">
             <span id="pollution-level">Загрязнение воздуха: 1.23456</span>
-            <input type="search" class="searchField" placeholder="Search">
+            <input type="search" class="searchField" id="todaySearch" placeholder="Search">
          </section>
          <section id="column-container">
             <section class="column">
                <p id="location">Ижевск, Россия</p>
                <p id="weekday">Среда</p>
                <p id="weather">Облачно</p>
-               <img alt="weather-image" src="img/today/sunnyWeather.png">
+               <img id="weather-image" alt="weather-image">
                <span id="temperature">22 °C</span>
             </section>
             <section class="column">
-               <p id="precip-prob">Вероятность осадков: 20%</p>
-               <p id="humidity">Влажность: 45%</p>
-               <p id="windspeed">Ветер: 11 км/ч</p>
+               <p id="humidity">Влажность: <span id="humidity-value"></span> %</p>
+               <p id="windspeed">Ветер: <span id="windspeed-value"></span> м/с</p>
                <section>
-                  <button><a>Температура</a></button>
-                  <button><a>Вероятность осадков</a></button>
-                  <button><a>Ветер</a></button>
+                  <div class="button" checked><a>Температура</a></div>
+                  <div class="button"><a>Вероятность осадков</a></div>
+                  <div class="button"><a>Ветер</a></div>
                </section>
             </section>
          </section>
@@ -50,51 +49,48 @@
             <span>11:00</span>
             <span>14:00</span>
          </section>
-         <section id="weather-forecast">
+         <section id="weather-forecast" class="flex">
             <figure class="date-block">
-               <p>ср</p>
-               <img alt="weather-status" src="img/today/snow.png">
-               <p>22 <span class="grayed">13</span></p>
+               <p class="day-name">-</p>
+               <img class="weather-status" alt="weather-status">
+               <p class="night-temp">-</p>
+               <p class="day-temp">-</p>
             </figure>
             <figure class="date-block">
-               <p>чт</p>
-               <img alt="weather-status" src="img/today/cloudy.png">
-               <p>22 <span class="grayed">13</span></p>
+               <p class="day-name">-</p>
+               <img class="weather-status" alt="weather-status">
+               <p class="night-temp">-</p>
+               <p class="day-temp">-</p>
             </figure>
             <figure class="date-block">
-               <p>пт</p>
-               <img alt="weather-status" src="img/today/partly_cloudy.png">
-               <p>22 <span class="grayed">13</span></p>
+               <p class="day-name">-</p>
+               <img class="weather-status" alt="weather-status">
+               <p class="night-temp">-</p>
+               <p class="day-temp">-</p>
             </figure>
             <figure class="date-block">
-               <p>сб</p>
-               <img alt="weather-status" src="img/today/snow.png">
-               <p>22 <span class="grayed">13</span></p>
+               <p class="day-name">-</p>
+               <img class="weather-status" alt="weather-status">
+               <p class="night-temp">-</p>
+               <p class="day-temp">-</p>
             </figure>
             <figure class="date-block">
-               <p>вс</p>
-               <img alt="weather-status" src="img/today/cloudy.png">
-               <p>22 <span class="grayed">13</span></p>
+               <p class="day-name">-</p>
+               <img class="weather-status" alt="weather-status">
+               <p class="night-temp">-</p>
+               <p class="day-temp">-</p>
             </figure>
-            <figure class="date-block">
-               <p>пн</p>
-               <img alt="weather-status" src="img/today/partly_cloudy.png">
-               <p>22 <span class="grayed">13</span></p>
-            </figure>
-            <figure class="date-block">
-               <p>вт</p>
-               <img alt="weather-status" src="img/today/snow.png">
-               <p>22 <span class="grayed">13</span></p>
-            </figure>
-            <figure class="date-block">
-               <p>ср</p>
-               <img alt="weather-status" src="img/today/cloudy.png">
-               <p>22 <span class="grayed">13</span></p>
+            <figure class="date-block" hidden>
+               <p class="day-name">-</p>
+               <img class="weather-status" alt="weather-status">
+               <p class="night-temp">-</p>
+               <p class="day-temp">-</p>
             </figure>
          </section>
          <footer>
             <p id="copyright">2018 © Copyright</p>
          </footer>
       </main>
+      <script src="js/today.js"></script>
    </body>
 </html>

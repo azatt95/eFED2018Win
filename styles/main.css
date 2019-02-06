@@ -15,9 +15,11 @@ figure {
     padding: 5px;
 }
 
-main > section,
 main > nav,
-main > figure{
+main > section,
+main > figure,
+main > div > section,
+main > div > figure {
     border-bottom: 1px solid rgb(150, 150, 150);
 }
 
@@ -36,28 +38,29 @@ nav {
     background-color: rgb(216, 216, 216);
 }
 
-button {
-    appearance: none;
+.button {
     background: rgb(240, 240, 240);
     border: 1px solid darkgrey;
-    padding: 0;
-    font-size: inherit;
-    color: black;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
-button:hover {
+.button:hover {
     background-color: rgb(250, 250, 250);
     box-shadow: 0 0 2px rgba(0, 0, 0, .1);
 }
 
-button:hover:active,
-button[checked] {
+.button:hover:active,
+.button[checked] {
     background-color: rgb(190, 190, 190);
     border-color: rgb(120,120,120);
     box-shadow: 0 1px 2px rgba(0, 0, 0, .2) inset;
 }
 
-button > a {
+.button > a {
     display: block;
     color: inherit;
     text-decoration: inherit;
@@ -89,4 +92,10 @@ footer {
 
 .clearFloats {
     clear: both;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
