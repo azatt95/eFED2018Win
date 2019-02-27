@@ -73,7 +73,7 @@ nav {
 }
 
 .searchField {
-    float: right;
+    /* float: right; */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

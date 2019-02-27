@@ -1,13 +1,10 @@
 @import "main.css";
 
-#pollution-level {
+/* #pollution-level {
     vertical-align: center;
-}
+} */
 
-#temperature {
-    font-size: 300%;
-}
-
+#temperature,
 #location,
 #precip-prob,
 #humidity,
@@ -20,10 +17,10 @@
     font-size: 150%;
 }
 
-.column {
+/* .column {
     display: inline-block;
     vertical-align: top;
-}
+} */
 
 #copyright {
     text-align: center;
@@ -35,4 +32,52 @@
 
 .night-temp {
     color: gray;
+}
+
+#column-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.column {
+    /* flex: 1; */
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#tempStatus {
+    display: flex;
+    align-items: center;
+}
+
+#weather-image {
+    margin-right: 10px;
+}
+
+#buttonSelector {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#buttonSelector > .button {
+    margin: 2px;
+}
+
+#weather-forecast,
+.date-block {
+    display: flex;
+}
+
+#weather-forecast {
+    flex-direction: column;
+}
+
+.date-block {
+    justify-content: space-between;
 }

@@ -17,7 +17,7 @@
             <div class="button"><a href="history.html">История погоды</a></div>
          </nav>
          <section class="search-bar">
-            <span id="pollution-level">Загрязнение воздуха: 1.23456</span>
+            <p id="pollution-level">Загрязнение воздуха: 1.23456</p>
             <input type="search" class="searchField" id="todaySearch" placeholder="Search">
          </section>
          <section id="column-container">
@@ -25,13 +25,15 @@
                <p id="location">Ижевск, Россия</p>
                <p id="weekday">Среда</p>
                <p id="weather">Облачно</p>
-               <img id="weather-image" alt="weather-image">
-               <span id="temperature">22 °C</span>
+               <div id="tempStatus">
+                  <img id="weather-image" alt="WI" src="img/today/loading.gif">
+                  <p id="temperature"></p>
+               </div>
             </section>
             <section class="column">
                <p id="humidity">Влажность: <span id="humidity-value"></span> %</p>
                <p id="windspeed">Ветер: <span id="windspeed-value"></span> м/с</p>
-               <section>
+               <section id="buttonSelector">
                   <div class="button" checked><a>Температура</a></div>
                   <div class="button"><a>Вероятность осадков</a></div>
                   <div class="button"><a>Ветер</a></div>
@@ -49,42 +51,36 @@
             <span>11:00</span>
             <span>14:00</span>
          </section>
-         <section id="weather-forecast" class="flex">
+         <section id="weather-forecast">
             <figure class="date-block">
                <p class="day-name">-</p>
-               <img class="weather-status" alt="weather-status">
-               <p class="night-temp">-</p>
-               <p class="day-temp">-</p>
+               <img class="weather-status" alt="WS" src="img/today/loading.gif">
+               <div><p class="night-temp">-</p><p class="day-temp">-</p></div>
             </figure>
             <figure class="date-block">
                <p class="day-name">-</p>
-               <img class="weather-status" alt="weather-status">
-               <p class="night-temp">-</p>
-               <p class="day-temp">-</p>
+               <img class="weather-status" alt="WS" src="img/today/loading.gif">
+               <div><p class="night-temp">-</p><p class="day-temp">-</p></div>
             </figure>
             <figure class="date-block">
                <p class="day-name">-</p>
-               <img class="weather-status" alt="weather-status">
-               <p class="night-temp">-</p>
-               <p class="day-temp">-</p>
+               <img class="weather-status" alt="WS" src="img/today/loading.gif">
+               <div><p class="night-temp">-</p><p class="day-temp">-</p></div>
             </figure>
             <figure class="date-block">
                <p class="day-name">-</p>
-               <img class="weather-status" alt="weather-status">
-               <p class="night-temp">-</p>
-               <p class="day-temp">-</p>
+               <img class="weather-status" alt="WS" src="img/today/loading.gif">
+               <div><p class="night-temp">-</p><p class="day-temp">-</p></div>
             </figure>
             <figure class="date-block">
                <p class="day-name">-</p>
-               <img class="weather-status" alt="weather-status">
-               <p class="night-temp">-</p>
-               <p class="day-temp">-</p>
+               <img class="weather-status" alt="WS" src="img/today/loading.gif">
+               <div><p class="night-temp">-</p><p class="day-temp">-</p></div>
             </figure>
             <figure class="date-block" hidden>
                <p class="day-name">-</p>
-               <img class="weather-status" alt="weather-status">
-               <p class="night-temp">-</p>
-               <p class="day-temp">-</p>
+               <img class="weather-status" alt="WS" src="img/today/loading.gif">
+               <div><p class="night-temp">-</p><p class="day-temp">-</p></div>
             </figure>
          </section>
          <footer>
